@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,29 +18,33 @@
             justify-content: center;
             height: 100vh;
         }
+
         .container {
             background: white;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             width: 90%;
             max-width: 400px;
             transition: transform 0.3s ease-in-out;
         }
+
         .certificate-img {
             width: 100%;
             height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
-            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
             display: block;
         }
+
         .price {
             font-size: 1.5em;
             color: #007BFF;
             margin: 15px 0;
             font-weight: bold;
         }
+
         .btn {
             display: block;
             padding: 14px;
@@ -55,9 +60,11 @@
             border: none;
             cursor: pointer;
         }
+
         .btn:hover {
             background: linear-gradient(135deg, #0056b3, #003d82);
         }
+
         .popup {
             display: none;
             position: fixed;
@@ -69,30 +76,43 @@
             background: white;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
             animation: fadeIn 0.3s;
         }
+
         .popup .btn {
             background: #28a745;
         }
+
         .popup .btn:hover {
             background: #218838;
         }
+
         .close-btn {
             background: red;
             font-size: 1em;
         }
+
         .close-btn:hover {
             background: darkred;
         }
+
         .contact {
             color: red;
             font-size: 1em;
             margin-top: 10px;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translate(-50%, -55%); }
-            to { opacity: 1; transform: translate(-50%, -50%); }
+            from {
+                opacity: 0;
+                transform: translate(-50%, -55%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
         }
     </style>
     <script>
@@ -104,14 +124,16 @@
         }
     </script>
 </head>
+
 <body>
     <div class="container">
         <h1>شهادة مهارات قوقل في التسويق الرقمي</h1>
-        <img src="https://www.classcentral.com/report/wp-content/uploads/2021/12/digital-garage-certificate-final.png" alt="شهادة مهارات قوقل" class="certificate-img">
+        <img src="https://www.classcentral.com/report/wp-content/uploads/2021/12/digital-garage-certificate-final.png"
+            alt="شهادة مهارات قوقل" class="certificate-img">
         <p class="price">السعر: 25 دينار أردني / 35.25$</p>
         <button class="btn" onclick="showPaymentPopup()">شراء الآن</button>
     </div>
-    
+
     <div id="payment-popup" class="popup">
         <h1>اختر وسيلة الدفع</h1>
         <a href="https://buy.stripe.com/4gw7v6fmLh1m6paaEK" class="btn" target="_blank">Visa</a>
@@ -121,4 +143,5 @@
         <button class="btn close-btn" onclick="closePopup()">إغلاق</button>
     </div>
 </body>
+
 </html>
