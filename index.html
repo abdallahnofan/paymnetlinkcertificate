@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>شهادة مهارات قوقل في التسويق الرقمي</title>
     <style>
         body {
@@ -11,22 +11,28 @@
             text-align: center;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         .container {
             background: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            max-width: 370px;
-            margin: auto;
+            width: 90%;
+            max-width: 400px;
             transition: transform 0.3s ease-in-out;
         }
-        img {
+        .certificate-img {
             width: 100%;
-            max-width: 350px;
+            height: auto;
             border-radius: 10px;
             margin-bottom: 15px;
             box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            display: block;
         }
         .price {
             font-size: 1.5em;
@@ -36,15 +42,15 @@
         }
         .btn {
             display: block;
-            padding: 12px;
+            padding: 14px;
             margin: 12px auto;
             background: linear-gradient(135deg, #007BFF, #0056b3);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1em;
-            width: 90%;
-            max-width: 300px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            width: 100%;
+            max-width: 350px;
             transition: 0.3s;
             border: none;
             cursor: pointer;
@@ -59,7 +65,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 90%;
-            max-width: 380px;
+            max-width: 400px;
             background: white;
             padding: 20px;
             border-radius: 15px;
@@ -101,7 +107,7 @@
 <body>
     <div class="container">
         <h1>شهادة مهارات قوقل في التسويق الرقمي</h1>
-        <img src="digital-garage-certificate-final.png" alt="شهادة مهارات قوقل">
+        <img src="https://www.classcentral.com/report/wp-content/uploads/2021/12/digital-garage-certificate-final.png" alt="شهادة مهارات قوقل" class="certificate-img">
         <p class="price">السعر: 25 دينار أردني / 35.25$</p>
         <button class="btn" onclick="showPaymentPopup()">شراء الآن</button>
     </div>
